@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Cluster - Pagination</title>     
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cardpagination.css">
+    <link rel="icon" href="https://png.pngtree.com/element_pic/16/11/02/bd886d7ccc6f8dd8db17e841233c9656.jpg">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="title">CARD HUB</div>
+            <div class="pagination">
+                <button class="pagenumber" id="prev">prev</button>
+                <button class="pagenumber" id="onClickButton1" onclick="buttonrun(1)">1</button>
+                <button class="pagenumber" id="onClickButton2" onclick="buttonrun(2)">2</button>
+                <button class="pagenumber" id="onClickButton3" onclick="buttonrun(3)">3</button>
+                <button class="pagenumber" id="onClickButton4" onclick="buttonrun(4)">4</button>
+                <button class="pagenumber" id="onClickButton5" onclick="buttonrun(5)">5</button>
+                <button class="pagenumber" id="next">next</button>
+            </div>
+            <div class="card-details">
+                <div id="firstSetInfo" class="grid"></div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="cardpagination.js"></script>
+    </div>
+</body>
+</html>

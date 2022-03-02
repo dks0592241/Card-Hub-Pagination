@@ -1,0 +1,127 @@
+body{
+    background-color: #222;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro'; 
+}
+.title{
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: floralwhite;   
+}
+.pagination{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px; 
+}
+.pagenumber{
+    background-color: white;
+    display: inline-block;
+    color: black;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor:pointer;  
+}
+.pagenumber:hover{
+    background-color: gray;
+    color:white
+}
+.pagenumber:focus{
+    background-color: darkslategray;
+}
+.grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding:10px 200px; /* area between cards and screen */  
+}
+.card{
+    position: relative;
+    background: #fff;
+    max-width: 200px;
+    width:150px;
+    height:180px;
+    margin:10px;  /* space for each cards */
+    box-shadow: 0 0 3px 0 #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #222;
+    cursor: pointer;
+    padding-bottom: 0;
+}
+
+/* size of the cards */
+.card-image img{
+    width:150px;
+    height:100px;
+}
+.card-info{
+    position: relative;
+    color:#222;
+    padding: 10px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-info h3{
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+.card-info p{
+    font-size: 10px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.card:hover{
+    transform: translateX(5px);
+    border: 1px blanchedalmond dotted;   
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1249px){
+    .grid{
+        padding:10px 120px;
+    }
+}
+@media screen and (max-width: 579px){
+    .grid{
+        padding:10px 50px;
+    }
+}
+@media screen and (max-width: 439px){
+    .grid{
+        padding:10px 20px;
+    }
+    .card-image img{   
+        width:120px;
+        height:80px;
+    }
+    .card{
+        width:120px;
+        height:160px;
+    }
+}
+@media screen and (max-width: 379px){
+    .grid{
+        padding:10px 10px;
+    }
+    .card-image img{
+        width:120px;
+        height:80px;
+    }
+    .card{
+        width:120px;
+        height:160px;
+    }
+}
+ 
